@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test view</title>
+    </head>
+    <body>
+        {% if success %}
+            Success!
+        {% else %}
+            <form method="post" name="upload_form" enctype="multipart/form-data">
+                {{ form.as_p }}
+                <p><input type="submit"></p>
+            </form>
+        {% endif %}
+    </body>
+</html>
