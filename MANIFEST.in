@@ -1,0 +1,3 @@
+include README.rst
+include tests.py
+include testproject/*.py
