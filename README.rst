@@ -7,9 +7,10 @@ URLs from a virtual server running your Django project. This defaults to
 http://localhost:17681 - use self.browser_url() to avoid hardcoding that
 address.
 
-e.g:
+E.g.:
 
 ::
+
     class MyTestCase(DjangoMechanizeTestCase):
         def test_with_mechanize(self):
             self.browser.open(self.browser_url('/test_view/'))
